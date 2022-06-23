@@ -60,3 +60,7 @@
 15. Complete Add To Chart
     1. check exist item in the chart
     2. check count in stock in backend
+16. Create Cart Screen
+    1. create 2 cols
+    2. display items list
+    3. create action column
