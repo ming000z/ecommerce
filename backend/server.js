@@ -1,5 +1,22 @@
+// mogo password：pukpMNBeV0KLpA4Z
+
+// mongodb+srv://miz221:pukpMNBeV0KLpA4Z@cluster0.qu3ph.mongodb.net/amazona?retryWrites=true&w=majority
+
 import express from 'express';
 import data from './data.js';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+mongoose
+    .connect(process.env.MONGODB_URI)
+    .then(() => {
+        console.log('connect to DB successfully')
+    })
+    .catch((err) => {
+        console.log(err.message);
+    });
 
 const app = express();
 
