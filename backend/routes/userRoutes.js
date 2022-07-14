@@ -40,7 +40,7 @@ userRouter.post(
             name: user.name,
             email: user.email,
             isAdmin: user.isAdmin,
-            toekn: generateToken(user),
+            token: generateToken(user),
         });
     })
 );
