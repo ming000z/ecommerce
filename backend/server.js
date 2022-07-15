@@ -73,3 +73,10 @@ const port = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log(`serve at http://localhost:${port}`);
 });
+
+
+  // "scripts": {
+  //   "build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+  //   "start": "node backend/server.js",
+  //   "test": "echo \"Error: no test specified\" && exit 1"
+  // },
