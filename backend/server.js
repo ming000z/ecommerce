@@ -75,8 +75,12 @@ app.listen(port, () => {
 });
 
 
-  // "scripts": {
-  //   "build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
-  //   "start": "node backend/server.js",
-  //   "test": "echo \"Error: no test specified\" && exit 1"
-  // },
+
+
+
+//   "scripts": {
+//     "start": "react-scripts start",
+//     "build": "react-scripts build",
+//     "test": "react-scripts test",
+//     "eject": "react-scripts eject"
+//   },
