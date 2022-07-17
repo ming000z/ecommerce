@@ -27,6 +27,8 @@ function HomeScreen() {
         loading: true, 
         error: '',
     });
+    console.log(products)
+    
     // define a state to save the products from backend
     // return a variable [products] and a function [setProducts] to update the vairable
     // const [products, setProducts] = useState([]);
@@ -44,6 +46,8 @@ function HomeScreen() {
         // setProducts(result.data);
         fetchData();
     }, []);
+
+
     return (
     <div>
         <Helmet><title>Amazona</title></Helmet>
@@ -59,13 +63,11 @@ function HomeScreen() {
                     <Col key={product.slug} sm={6} md={4} lg={3} className="mb-3">
                         <Product product={product}></Product>
                     </Col>
-                ))
-                }
+                ))}
             </Row>
         )
 
         }
-
 
         </div>
     </div>
